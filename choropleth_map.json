@@ -1,0 +1,228 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Suicide Rate in Europe between 1985 and 2015",
+    "width": 1180,
+    "height": 450,
+    "params": [
+      {
+        "name": "Year_selection",
+        "value": 2010,
+        "bind": {
+          "input": "range",
+          "min": 1985,
+          "max": 2015,
+          "step": 1,
+          "name": "Year:  "
+        }
+      },
+      {
+        "name": "zoom_level",
+        "value": 900,
+        "bind": {
+          "input": "range",
+          "min": 350,
+          "max": 3000,
+          "step": 5,
+          "name": "Zoom: "
+        }
+      },
+      {
+        "name": "center_to",
+        "value" :[20.73, 50.19],
+        "bind": {
+          "input": "select",
+          "options": [
+            [84.06,60.98],
+            [20.73, 50.19]
+          ],
+          "labels": ["Russia","whole Europe"],
+          "name": "Map Centre: "
+        }
+      }
+      
+     
+    ],
+    "projection": {
+      "type": "equalEarth",
+      "center": {"expr": "center_to"},
+      "scale": {"expr": "zoom_level"}
+      
+    },
+    "layer": [
+      
+      { 
+        "data": {
+          "url": "https://raw.githubusercontent.com/Min0164/3179-Data_Visualisation_2/main/data/ne_50m_admin_0_countries.json",
+          "format": {"type": "topojson", "feature": "ne_50m_admin_0_countries"}
+        },
+        "transform": [
+          {
+            "calculate": "'Data is not available in ' + datum.properties.NAME",
+            "as": "note"
+          }
+        ],
+        "mark": {
+          "type": "geoshape",
+          "fill": "#ddd",
+          "stroke": "white",
+          "strokeWidth": 2
+        },
+        "encoding": {"tooltip": {"field": "note"}}
+      },
+      
+      
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/Min0164/3179-Data_Visualisation_2/main/data/Europe_map.csv"
+        },
+        "transform": [
+          {
+            "lookup": "country",
+            "from": {
+              "data": {
+                "url": "https://raw.githubusercontent.com/Min0164/3179-Data_Visualisation_2/main/data/ne_50m_admin_0_countries.json",
+                "format": {
+                  "type": "topojson",
+                  "feature": "ne_50m_admin_0_countries"
+                }
+              },
+              "key": "properties.NAME"
+            },
+            "as": "geo"
+          },
+          {"filter": "datum.year == Year_selection"}
+        ],
+        "mark": {"type": "geoshape", "stroke": "#fff", "strokeWidth": 2.0},
+        "encoding": {
+          "shape": {"field": "geo", "type": "geojson"},
+          "color": {
+            "field": "Suicide Rate per 100,000 Population",
+            "type": "quantitative",
+            "title": ["Suicide Rate per 100,000","Population"],
+            "scale": {
+              "type": "threshold",
+              "domain":[5,15,20,25,30],
+              "range":["#fed98e","#fd9f55","#f87f2c","#e85e0f","#d54c06","#662506"]
+            },
+            "legend":{"direction": "vertical","orient": "top-left","labelFontSize":{"expr": "10"}}
+          },
+          "tooltip": [
+            {"field": "country", "type": "nominal", "title": "Country"},
+            {
+              "field": "Suicide Rate per 100,000 Population",
+              "type": "quantitative",
+              "title": ["Suicide Rate per 100,000 Population"],
+              "format": ".2f"
+            },
+            {"field": "year", "type": "quantitative", "title": "Year"}
+          ]
+        }
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/Min0164/3179-Data_Visualisation_2/main/data/Europe_map.csv"
+        },
+        "transform": [
+          {
+            "lookup": "country",
+            "from": {
+              "data": {
+                "url": "https://raw.githubusercontent.com/Min0164/3179-Data_Visualisation_2/main/data/ne_50m_admin_0_countries.json",
+                "format": {
+                  "type": "topojson",
+                  "feature": "ne_50m_admin_0_countries"
+                }
+              },
+              "key": "properties.NAME"
+            },
+            "as": "geo"
+          }
+        ],
+       "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "top",
+        "dx": -1,
+        "fontSize": 15,
+        "fontWeight":"bold",
+        "fontStyle": "normal",
+        "color":"#67000d"     
+      },
+      "encoding": {
+        "longitude": {
+          "field": "CapitalLongitude", 
+          "type": "quantitative"},
+        "latitude": {
+          "field": "CapitalLatitude", 
+          "type": "quantitative"},
+        "text":{
+          "field": "country",
+          "type": "nominal"
+        },
+        "opacity": {
+          "condition": {
+            "test": "datum['country'] == 'United Kingdom' || datum['country'] == 'Russia' || datum['country'] == 'France' || datum['country'] == 'Spain' || datum['country'] == 'Italy' || datum['country'] == 'Iceland'",
+            "value": 1
+          },
+          "value": 0
+        
+        }
+      }
+
+        },
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/Min0164/3179-Data_Visualisation_2/main/data/Europe_map.csv"
+          },
+          "transform": [
+            {
+              "lookup": "country",
+              "from": {
+                "data": {
+                  "url": "https://raw.githubusercontent.com/Min0164/3179-Data_Visualisation_2/main/data/ne_50m_admin_0_countries.json",
+                  "format": {
+                    "type": "topojson",
+                    "feature": "ne_50m_admin_0_countries"
+                  }
+                },
+                "key": "properties.NAME"
+              },
+              "as": "geo"
+            }
+          ],
+         "mark": {
+          "type": "text",
+          "align": "center",
+          "baseline": "top",
+          "dx": -1,
+          "fontSize": 14,
+          "fontWeight":"bold",
+          "fontStyle": "normal",
+          "color":"brown"     
+        },
+        "encoding": {
+          "longitude": {
+            "field": "CapitalLongitude", 
+            "type": "quantitative"},
+          "latitude": {
+            "field": "CapitalLatitude", 
+            "type": "quantitative"},
+          "text":{
+            "field": "country",
+            "type": "nominal"
+          },
+          "opacity": {
+            "condition": {
+              "test": "datum['country'] == 'Lithuania' || datum['country'] == 'Finland'",
+              "value": 1
+            },
+            "value": 0
+          
+          }
+        }
+  
+          }
+      
+    ],
+    "config": {}
+  }

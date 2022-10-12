@@ -1,0 +1,143 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "An interactive scatter plot of global health statistics by country and year.",
+    "data": {"url": "https://raw.githubusercontent.com/Min0164/3179-Data_Visualisation_2/main/data/bubble_chart_gdp_converted.json"},
+    "width": 650,
+    "height": 300,
+    
+    "layer": [
+      {
+        "transform": [
+          {"filter": {"field": "country", "equal": "United Kingdom"}},
+          {"filter": {"param": "year"}}
+        ],
+        "mark": {
+          "type": "text",
+          "fontSize": 100,
+          "x": 420,
+          "y": 250,
+          "opacity": 0.06
+        },
+        "encoding": {"text": {"field": "year"}}
+      },
+      {
+        
+        "encoding": {
+          "y": {
+            "field": "HDI for year",
+            "type": "quantitative",
+            "scale": {"domain": [0.5, 1]},
+            "axis": {"tickCount": 10, "title": "HDI for year"}
+          },
+          "x": {
+            "field": "gdp_per_capita ($)",
+            "type": "quantitative",
+            "scale": {"domain": [0.03, 13]},
+            "axis": {"tickCount": 15, "title": "GDP per capita"}
+          }
+        },
+        "layer": [
+          {
+            "mark": {
+              "type": "line",
+              "size": 4,
+              "color": "lightgray",
+              "strokeCap": "round"
+            },
+            "encoding": {
+              "detail": {"field": "country"},
+              "order": {"field": "year"},
+              "opacity": {
+                "condition": {
+                  "test": {"or": [
+                    {"param": "hovered", "empty": false},
+                    {"param": "clicked", "empty": false}
+                  ]},
+                  "value": 0.8
+                },
+                "value": 0
+              }
+            }
+          },
+          {
+            "params": [
+              {
+                "name": "year",
+                "value": [{"year": 2010}],
+                "select": {
+                  "type": "point",
+                  "fields": ["year"]
+                },
+                "bind": {
+                  "name": "Year",
+                  "input": "range",
+                  "min": 1990, "max": 2015, "step": 5
+                }
+              },
+              {
+                "name": "hovered",
+                "select": {
+                  "type": "point",
+                  "fields": ["country"],
+                  "toggle": false,
+                  "on": "mouseover"
+                }
+              },
+              {
+                "name": "clicked",
+                "select": {"type": "point", "fields": ["country"]}
+              }
+            ],
+            "transform": [{"filter": {"param": "year"}}],
+            "mark": {"type": "circle", "size": 100, "opacity": 0.9},
+            "encoding": {"color": {"field": "country", "title": "Region","legend":null},
+          "size":{"field":"population","legend":null}}
+          },
+          {
+            "transform": [
+              {
+                "filter": {
+                  "and": [
+                    {"param": "year"},
+                    {"or": [
+                      {"param": "clicked", "empty": false},
+                      {"param": "hovered", "empty": false}
+                    ]}
+                  ]
+                }
+              }
+            ],
+            "mark": {
+              "type": "text",
+              "yOffset": -12,
+              "fontSize": 12,
+              "fontWeight": "bold"
+            },
+            "encoding": {
+              "text": {"field": "country"},
+              "color": {"field": "country", "title": "Region"}
+            }
+          },
+          {
+            "transform": [
+              {"filter": {"param": "hovered", "empty": false}},
+              {"filter": {"not": {"param": "year"}}}
+            ],
+            "layer": [
+              {
+                "mark": {
+                  "type": "text",
+                  "yOffset": -12,
+                  "fontSize": 12,
+                  "color": "gray"
+                },
+                "encoding": {"text": {"field": "year"}}
+              },
+              {"mark": {"type": "circle", "color": "gray"}}
+            ]
+          }
+          
+        ]
+      }
+    ]
+  }

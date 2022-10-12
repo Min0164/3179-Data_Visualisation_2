@@ -1,0 +1,134 @@
+/* tittle of visualisation*/
+
+#Title_Visualisation {
+    margin-left: 90px;
+    margin-right:90px ;
+    margin-top: 30px;
+    margin-bottom: -40px;
+    
+    
+    text-align: center;
+    color: rgb(144, 7, 7);
+    border-color: black;
+    flood-color: rgb(96, 4, 4);
+    font-size: 50px;
+}
+
+
+#divider{
+    margin-left: 50px;
+    margin-right: 90px;
+    margin-top: -50;
+
+
+}
+#divider2{
+    margin-left:100px;
+    margin-right: 100px;
+    margin-top: -50px;
+    color:rgb(188, 61, 61);
+    size: 10mm;
+   
+
+}
+
+#section1{
+    margin-left: 50px;
+    
+    font-size: 35px;
+   
+
+}
+
+#sub-tittle{
+    
+    font-size: 42px;
+    border: 0in;
+   
+
+}
+
+.subsection{
+    
+    margin-left: 50px;
+    color:rgb(99, 94, 94);
+       
+
+}
+
+#choropleth_map{
+    
+    margin-left: 50px;
+    margin-right: 20px;
+
+
+}
+
+
+
+.description_raw_line{
+    
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: left;
+   
+   
+
+}
+
+#raw_line{
+    
+    margin-left: 10px;
+    margin-right: 20px;
+   
+   
+   
+
+}
+
+
+.description_bump_chart{
+    
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: left;
+   
+   
+
+}
+
+#bump_chart{
+    
+    margin-left: 10px;
+    margin-right: 20px;
+
+}
+
+#section2{
+    margin-left: 50px;
+    
+    font-size: 35px;
+   
+
+}
+.description_correlation{
+    
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 70px;
+    text-align: left;
+   
+   
+
+}
+
+#heat_map{
+    
+    margin-left: 15px;
+    margin-right: 20px;
+    margin-top: 70px;
+
+}
+
+
+

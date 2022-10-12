@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/grids-responsive-min.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css" media="all">
+    <script src="vega_lite_vis.js"></script>
+    <link rel="stylesheet" href="layout.css">
+
+   
+
+</head>
+<body>
+    <div class="header">
+        
+             <h1 id="Title_Visualisation">Suicide Rate in Europe</h1>
+             <h1 id="divider">__________________________________________________________________</h1>
+             <h1 id="divider2">_____________________________________________________________</h1>
+    </div>
+    <div class="pure-g">
+        
+        <div class="pure-u-1-1">
+            <h1 id="section1">1.   Suicide Rate for different Europe country over year (1985 to 2015) </h1>
+        </div>
+        <div class="pure-u-1-1">
+            <h2 class="subsection">Choropleth Map </h2>
+        </div>
+       
+
+        <div class="pure-u-1-1">
+            <div id="choropleth_map"></div>
+        </div>
+        <div class="pure-u-1-1">
+            <h2 class="subsection">How suicide rate for each country change and compare with average suicide rate</h2>
+        </div>
+
+        <div class="pure-u-2-5">
+            <p class="description_raw_line">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br>
+                 when an unknown printer took a galley of type and scrambled it to make a type<br>
+                specimen book. It has survived not only five centuries, but also the leap into<br>
+                electronic typesetting,remaining essentially unchanged. <br>
+
+            <p class="description_raw_line">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,<br>
+                 and more recently with desktop publishing software like Aldus PageMaker including versions of<br> 
+                 Lorem Ipsum.</p>
+        </div>
+        <div class="pure-u-3-5">
+            <div id="raw_line"></div>
+        </div>
+        <div class="pure-u-1">
+            <h2 class="subsection">Top-n country with highest suicide rate</h2>
+        </div>
+        <div class="pure-u-2-5">
+            <p class="description_bump_chart">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br>
+                 when an unknown printer took a galley of type and scrambled it to make a type<br>
+                specimen book. It has survived not only five centuries, but also the leap into<br>
+                electronic typesetting,remaining essentially unchanged. <br>
+
+            <p class="description_bump_chart">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,<br>
+                 and more recently with desktop publishing software like Aldus PageMaker including versions of<br> 
+                 Lorem Ipsum.</p>
+        </div>
+        <div class="pure-u-3-5">
+            <div id="bump_chart"></div>
+        </div>
+
+        <div class="pure-u-1-1">
+            <h1 id="section2">2. Factors that affect Suicide rate </h1>
+        </div>
+        <div class="pure-u-2-5">
+            <h2 class="subsection">Correlation</h2>
+            <p class="description_correlation">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br></p>
+            <p class="description_correlation">
+                 when an unknown printer took a galley of type and scrambled it to make a type<br>
+                specimen book. It has survived not only five centuries, but also the leap into<br>
+                electronic typesetting,remaining essentially unchanged. <br></p>
+
+            <div id="heat_map"></div>
+        </div>
+        <div class="pure-u-3-5">
+            <h2 class="subsection">
+                Suicide rate vs GDP per capita
+            </h2>
+            <div id="scatter_plot"></div>
+            <h2 class="subsection">
+                HDI for year vs GDP per capita
+            </h2>
+            <div id="scatter_plot2"></div>
+        </div>
+        
+    </div>
+
+    
+</body>
+</html>

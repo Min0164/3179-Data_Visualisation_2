@@ -8,7 +8,6 @@
     "params":[
       {
         "name":"Country_selection",
-        "select":{"type":"point","fields": ["country"]},
         "bind":{
           "input": "select",
           "options":[
@@ -63,7 +62,6 @@
           "legend": {"format": ".1s","orient": "top-right","direction": "horizontal"}
         },
         "color": {
-          
           "field": "country",
           "type": "nominal",
           "legend":null,
@@ -85,11 +83,11 @@
        "Bosnia and Herzegovina"
             ],
             "range": [
-              "#e41a1c",
-              "#984ea3",
-              "#ff7f00",
-              "#a6cee3",
-              "#377eb8",
+              "#d9d9d9",
+              "#d9d9d9",
+              "#d9d9d9",
+              "#d9d9d9",
+              "#d9d9d9",
               "#d9d9d9",
               "#d9d9d9",
               "#d9d9d9",
@@ -109,9 +107,7 @@
             ]
           }
         },
-        "opacity": {
-          "condition":{"param": "Country_selection","empty":false,"value":1},"value":0.5
-        },
+        "opacity": {"value": 1},
         "tooltip": [
           {"field": "country", "type": "nominal"},
           {"field": "population", "type": "quantitative", "format": ","},
