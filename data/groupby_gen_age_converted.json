@@ -1,0 +1,74 @@
+[
+ {
+   "sex": 1,
+   "age": 5,
+   "age-years": "5-14 years",
+   "population": 1234.242234
+ },
+ {
+   "sex": 2,
+   "age": 5,
+   "age-years": "5-14 years",
+   "population": 1099.262933
+ },
+ {
+   "sex": 1,
+   "age": 15,
+   "age-years": "15-24 years",
+   "population": 1444.998552
+ },
+ {
+   "sex": 2,
+   "age": 15,
+   "age-years": "15-24 years",
+   "population": 1382.275568
+ },
+ {
+   "sex": 1,
+   "age": 25,
+   "age-years": "25-34 years",
+   "population": 1532.16268
+ },
+ {
+   "sex": 2,
+   "age": 25,
+   "age-years": "25-34 years",
+   "population": 1498.926443
+ },
+ {
+   "sex": 1,
+   "age": 35,
+   "age-years": "35-54 years",
+   "population": 2842.500625
+ },
+ {
+   "sex": 2,
+   "age": 35,
+   "age-years": "35-54 years",
+   "population": 2908.938847
+ },
+ {
+   "sex": 1,
+   "age": 55,
+   "age-years": "55-74 years",
+   "population": 1826.663302
+ },
+ {
+   "sex": 2,
+   "age": 55,
+   "age-years": "55-74 years",
+   "population": 2241.948444
+ },
+ {
+   "sex": 1,
+   "age": 75,
+   "age-years": "75+ years",
+   "population": 446.421258
+ },
+ {
+   "sex": 2,
+   "age": 75,
+   "age-years": "75+ years",
+   "population": 873.331358
+ }
+]
