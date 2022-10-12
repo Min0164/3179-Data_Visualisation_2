@@ -1,0 +1,117 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "values": [
+         {"actual": "Suicides_no", "predicted": "Suicides_no", "count": 1},
+        {"actual": "Suicides_no", "predicted": "Population", "count": 0.857075},
+        {"actual": "Suicides_no", "predicted": "HDI per year", "count": -0.022829},
+        {"actual": "Suicides_no", "predicted": "GDP per capita", "count": -0.144496},
+        {"actual": "Suicides_no", "predicted": "Suicides rate per 100,000 population", "count": 0.338461},
+        {"actual": "Population", "predicted": "Population", "count": 1.000000},
+        {"actual": "Population", "predicted": "Suicides_no", "count": 0.857075},
+        {"actual": "Population", "predicted": "HDI per year", "count": 0.047079},
+        {"actual": "Population", "predicted": "GDP per capita", "count": -0.082829},
+        {"actual": "Population", "predicted": "Suicides rate per 100,000 population", "count": 0.083814},
+        {"actual": "HDI per year", "predicted": "HDI per year", "count": 1.000000},
+        {"actual": "HDI per year", "predicted": "Suicides_no", "count": -0.022829},
+        {"actual": "HDI per year", "predicted": "Population", "count": -0.022829},
+        {"actual": "HDI per year", "predicted": "GDP per capita", "count": 0.728432},
+        {"actual": "HDI per year", "predicted": "Suicides rate per 100,000 population", "count": -0.080492},
+        {"actual": "GDP per capita", "predicted": "GDP per capita", "count": 1.000000},
+        {"actual": "GDP per capita", "predicted": "Population", "count": -0.082829	},
+        {"actual": "GDP per capita", "predicted": "Suicides_no", "count": -0.144496},
+        {"actual": "GDP per capita", "predicted": "HDI per year", "count": 0.728432},
+        {"actual": "GDP per capita", "predicted": "Suicides rate per 100,000 population", "count": -0.121677},
+        {"actual": "Suicides rate per 100,000 population", "predicted": "Suicides rate per 100,000 population", "count": 1.000000},
+        {"actual": "Suicides rate per 100,000 population", "predicted": "GDP per capita", "count": -0.121677},
+        {"actual": "Suicides rate per 100,000 population", "predicted": "Population", "count": 0.083814},
+        {"actual": "Suicides rate per 100,000 population", "predicted": "Suicides_no", "count": 0.338461},
+        {"actual": "Suicides rate per 100,000 population", "predicted": "HDI per year", "count": -0.080492}
+      ]
+    },
+    "params": [{"name": "highlight", "select": "point"}],
+    "layer":[
+      {
+      "mark": {"type": "rect", "strokeWidth": 2},
+      "encoding": {
+      "y": {
+        "field": "actual",
+        "type": "nominal",
+        "title":""
+      },
+      "x": {
+        "field": "predicted",
+        "type": "nominal",
+        "title":""
+      },
+      "fill": {
+        "field": "count",
+        "type": "quantitative"
+      },
+      "stroke": {
+        "condition": {
+          "param": "highlight",
+          "empty": false,
+          "value": "black"
+        },
+        "value": null
+      },
+      "opacity": {
+        "condition": {"param": "highlight", "value": 1},
+        "value": 0.5
+      },
+      "order": {"condition": {"param": "highlight", "value": 1}, "value": 0}
+    }},
+     {
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "top",
+        "dx": -1,
+        "fontSize": 12,
+        "fontWeight":"normal",
+        "fontStyle": "normal",
+        "color":"black"
+      },
+      "encoding": {
+        "y": {
+          "field": "actual",
+          "type": "nominal",
+          "title":""
+        },
+        "x": {
+          "field": "predicted",
+          "type": "nominal",
+          "title":""
+        },
+        "text":{
+          "field": "count",
+          "type": "quantitative"
+        },
+        "opacity": {
+          "condition": {
+            "test": "datum['count']>0.7",
+            "value": 1
+          },
+          "value": 0
+        
+        }
+      }
+
+  }],
+    "config": {
+      "scale": {
+        "bandPaddingInner": 0,
+        "bandPaddingOuter": 0
+      },
+      "view": {"step": 40},
+      "range": {
+        "ramp": {
+          "scheme": "yellow"
+        }
+      },
+      "axis": {
+        "domain": false
+      }
+    }
+  }
