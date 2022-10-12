@@ -1,0 +1,144 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Plot showing average data with raw values in the background.",
+    "width":680,
+    "height":400,
+    
+    "data": {"url": "https://raw.githubusercontent.com/Min0164/3179-Data_Visualisation_2/main/data/Europe_map_raw_line.csv"},
+    "params":[
+      {
+        "name":"Country_selection",
+        "select":{"type":"point","fields": ["country"]},
+        "bind":{
+          "input": "select",
+          "options":[
+            null,
+            "Austria",
+              "Finland",
+              "Hungary",
+              "Russia",
+              "Lithuania",
+              "Belgium", "Bulgaria", "France", "Greece", "Iceland",
+       "Ireland", "Italy", "Luxembourg", "Malta", "Netherlands",
+       "Portugal", "Spain", "United Kingdom", "Norway",
+       "Sweden", "Ukraine", "Romania", "Armenia", "Azerbaijan",
+       "Belarus", "Czech Republic", "Georgia", "Germany", "Poland",
+       "Slovakia", "Denmark", "Albania", "Croatia", "Estonia",
+       "Latvia", "Slovenia", "Switzerland", "Serbia",
+       "Cyprus", "San Marino", "Montenegro", "Turkey",
+       "Bosnia and Herzegovina"],
+       "labels": [
+        "Show All",
+        "Austria",
+              "Finland",
+              "Hungary",
+              "Russia",
+              "Lithuania",
+              "Belgium", "Bulgaria", "France", "Greece", "Iceland",
+       "Ireland", "Italy", "Luxembourg", "Malta", "Netherlands",
+       "Portugal", "Spain", "United Kingdom", "Norway",
+       "Sweden", "Ukraine", "Romania", "Armenia", "Azerbaijan",
+       "Belarus", "Czech Republic", "Georgia", "Germany", "Poland",
+       "Slovakia", "Denmark", "Albania", "Croatia", "Estonia",
+       "Latvia", "Slovenia", "Switzerland", "Serbia",
+       "Cyprus", "San Marino", "Montenegro", "Turkey",
+       "Bosnia and Herzegovina"
+       ],
+       "name": "Country Selection"
+
+        }
+      }
+    ],
+  
+    
+    "layer": [{
+      "transform": [{"filter":"Country_selection==null || datum.country==Country_selection"}],
+      "mark": {"type": "point", "opacity": 0.3},
+      "encoding": {
+        "x": {"timeUnit":"year", "field": "year","type": "ordinal"},
+        "y": {"field": "Suicide Rate per 100,000 Population", "type": "quantitative"},
+        "size": {
+          "field": "population",
+          "type": "quantitative",
+          "legend": {"format": ".1s","orient": "top-right","direction": "horizontal"}
+        },
+        "color": {
+          
+          "field": "country",
+          "type": "nominal",
+          "legend":null,
+          "scale": {
+            "domain": [
+              "Austria",
+              "Finland",
+              "Hungary",
+              "Russia",
+              "Lithuania",
+              "Belgium", "Bulgaria", "France", "Greece", "Iceland",
+       "Ireland", "Italy", "Luxembourg", "Malta", "Netherlands",
+       "Portugal", "Spain", "United Kingdom", "Norway",
+       "Sweden", "Ukraine", "Romania", "Armenia", "Azerbaijan",
+       "Belarus", "Czech Republic", "Georgia", "Germany", "Poland",
+       "Slovakia", "Denmark", "Albania", "Croatia", "Estonia",
+       "Latvia", "Slovenia", "Switzerland", "Serbia",
+       "Cyprus", "San Marino", "Montenegro", "Turkey",
+       "Bosnia and Herzegovina"
+            ],
+            "range": [
+              "#e41a1c",
+              "#984ea3",
+              "#ff7f00",
+              "#a6cee3",
+              "#377eb8",
+              "#d9d9d9",
+              "#d9d9d9",
+              "#d9d9d9",
+              "#d9d9d9",
+              "#d9d9d9",
+              "#d9d9d9",
+              "#d9d9d9",
+              "#d9d9d9",
+              "#d9d9d9",
+              "#d9d9d9", "#d9d9d9", "#d9d9d9", "#d9d9d9", "#d9d9d9",
+              "#d9d9d9", "#d9d9d9", "#d9d9d9", "#d9d9d9", "#d9d9d9",
+              "#d9d9d9", "#d9d9d9", "#d9d9d9", "#d9d9d9", "#d9d9d9",
+              "#d9d9d9", "#d9d9d9", "#d9d9d9", "#d9d9d9", "#d9d9d9",
+              "#d9d9d9", "#d9d9d9", "#d9d9d9", "#d9d9d9", "#d9d9d9",
+              "#d9d9d9", "#d9d9d9", "#d9d9d9", "#d9d9d9"
+              
+            ]
+          }
+        },
+        "opacity": {
+          "condition":{"param": "Country_selection","empty":false,"value":1},"value":0.5
+        },
+        "tooltip": [
+          {"field": "country", "type": "nominal"},
+          {"field": "population", "type": "quantitative", "format": ","},
+          {
+            "field": "Suicide Rate per 100,000 Population",
+            "type": "quantitative",
+            "format": ".2f"
+          }
+        ]
+      }
+      },
+      {
+      "mark": {"type":"line", "point":true ,"size":3},
+      "encoding": {
+        "x": {"timeUnit":"year", "field": "year","type": "ordinal"},
+        "y": {"aggregate": "mean", "field": "Suicide Rate per 100,000 Population"},
+        "tooltip": [
+          {
+            "aggregate":"mean",
+            "field": "Suicide Rate per 100,000 Population",
+            "type": "quantitative",
+            "title": "Average suicide Rate per 100,000 Population",
+            "format": ".2f"
+          }
+        ]
+      }
+    }
+  
+  ]
+  }
