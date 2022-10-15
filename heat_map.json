@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width":280,
-    "height":300,
+    "width":200,
+    "height":200,
     "data": {
       "values": [
          {"actual": "Suicides_no", "predicted": "Suicides_no", "count": 1},
@@ -69,7 +69,36 @@
       "tooltip": [
         {"field": "count", "type": "quantitative", "title": "p-value","format":".2f"}]
        
-    }}
+    }},
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "bottom",
+        "dx": -12,
+        "fontSize": 11.5,
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "y": {
+          "field": "actual",
+          "type": "nominal",
+          "title":"",
+          "axis":{"labelFontSize":12,"labelFontWeight":"bold"}
+        },
+        "x": {
+          "field": "predicted",
+          "type": "nominal",
+          "title":"",
+          "axis":{"labelFontSize":12,"labelFontWeight":"bold"}
+        },
+        "text": {
+          "field": "count",
+          "type": "quantitative",
+          "title":"p-value"
+        }
+      }
+    }
   ],
     "config": {
       "scale": {
