@@ -1,0 +1,932 @@
+[
+ {
+   "year": 1985,
+   "age": "15-24 years",
+   "suicides_no": 2875
+ },
+ {
+   "year": 1985,
+   "age": "25-34 years",
+   "suicides_no": 4799
+ },
+ {
+   "year": 1985,
+   "age": "35-54 years",
+   "suicides_no": 10311
+ },
+ {
+   "year": 1985,
+   "age": "5-14 years",
+   "suicides_no": 118
+ },
+ {
+   "year": 1985,
+   "age": "55-74 years",
+   "suicides_no": 10827
+ },
+ {
+   "year": 1985,
+   "age": "75+ years",
+   "suicides_no": 5168
+ },
+ {
+   "year": 1986,
+   "age": "15-24 years",
+   "suicides_no": 2983
+ },
+ {
+   "year": 1986,
+   "age": "25-34 years",
+   "suicides_no": 4905
+ },
+ {
+   "year": 1986,
+   "age": "35-54 years",
+   "suicides_no": 10596
+ },
+ {
+   "year": 1986,
+   "age": "5-14 years",
+   "suicides_no": 139
+ },
+ {
+   "year": 1986,
+   "age": "55-74 years",
+   "suicides_no": 10639
+ },
+ {
+   "year": 1986,
+   "age": "75+ years",
+   "suicides_no": 5189
+ },
+ {
+   "year": 1987,
+   "age": "15-24 years",
+   "suicides_no": 3841
+ },
+ {
+   "year": 1987,
+   "age": "25-34 years",
+   "suicides_no": 7003
+ },
+ {
+   "year": 1987,
+   "age": "35-54 years",
+   "suicides_no": 15250
+ },
+ {
+   "year": 1987,
+   "age": "5-14 years",
+   "suicides_no": 211
+ },
+ {
+   "year": 1987,
+   "age": "55-74 years",
+   "suicides_no": 13876
+ },
+ {
+   "year": 1987,
+   "age": "75+ years",
+   "suicides_no": 6638
+ },
+ {
+   "year": 1988,
+   "age": "15-24 years",
+   "suicides_no": 3979
+ },
+ {
+   "year": 1988,
+   "age": "25-34 years",
+   "suicides_no": 6998
+ },
+ {
+   "year": 1988,
+   "age": "35-54 years",
+   "suicides_no": 14905
+ },
+ {
+   "year": 1988,
+   "age": "5-14 years",
+   "suicides_no": 221
+ },
+ {
+   "year": 1988,
+   "age": "55-74 years",
+   "suicides_no": 13133
+ },
+ {
+   "year": 1988,
+   "age": "75+ years",
+   "suicides_no": 6549
+ },
+ {
+   "year": 1989,
+   "age": "15-24 years",
+   "suicides_no": 7615
+ },
+ {
+   "year": 1989,
+   "age": "25-34 years",
+   "suicides_no": 15272
+ },
+ {
+   "year": 1989,
+   "age": "35-54 years",
+   "suicides_no": 30498
+ },
+ {
+   "year": 1989,
+   "age": "5-14 years",
+   "suicides_no": 535
+ },
+ {
+   "year": 1989,
+   "age": "55-74 years",
+   "suicides_no": 22932
+ },
+ {
+   "year": 1989,
+   "age": "75+ years",
+   "suicides_no": 9866
+ },
+ {
+   "year": 1990,
+   "age": "15-24 years",
+   "suicides_no": 9699
+ },
+ {
+   "year": 1990,
+   "age": "25-34 years",
+   "suicides_no": 18945
+ },
+ {
+   "year": 1990,
+   "age": "35-54 years",
+   "suicides_no": 39161
+ },
+ {
+   "year": 1990,
+   "age": "5-14 years",
+   "suicides_no": 604
+ },
+ {
+   "year": 1990,
+   "age": "55-74 years",
+   "suicides_no": 28797
+ },
+ {
+   "year": 1990,
+   "age": "75+ years",
+   "suicides_no": 13116
+ },
+ {
+   "year": 1991,
+   "age": "15-24 years",
+   "suicides_no": 9793
+ },
+ {
+   "year": 1991,
+   "age": "25-34 years",
+   "suicides_no": 19369
+ },
+ {
+   "year": 1991,
+   "age": "35-54 years",
+   "suicides_no": 41943
+ },
+ {
+   "year": 1991,
+   "age": "5-14 years",
+   "suicides_no": 688
+ },
+ {
+   "year": 1991,
+   "age": "55-74 years",
+   "suicides_no": 30422
+ },
+ {
+   "year": 1991,
+   "age": "75+ years",
+   "suicides_no": 13137
+ },
+ {
+   "year": 1992,
+   "age": "15-24 years",
+   "suicides_no": 10470
+ },
+ {
+   "year": 1992,
+   "age": "25-34 years",
+   "suicides_no": 21040
+ },
+ {
+   "year": 1992,
+   "age": "35-54 years",
+   "suicides_no": 46841
+ },
+ {
+   "year": 1992,
+   "age": "5-14 years",
+   "suicides_no": 724
+ },
+ {
+   "year": 1992,
+   "age": "55-74 years",
+   "suicides_no": 32676
+ },
+ {
+   "year": 1992,
+   "age": "75+ years",
+   "suicides_no": 12751
+ },
+ {
+   "year": 1993,
+   "age": "15-24 years",
+   "suicides_no": 11648
+ },
+ {
+   "year": 1993,
+   "age": "25-34 years",
+   "suicides_no": 22667
+ },
+ {
+   "year": 1993,
+   "age": "35-54 years",
+   "suicides_no": 52025
+ },
+ {
+   "year": 1993,
+   "age": "5-14 years",
+   "suicides_no": 842
+ },
+ {
+   "year": 1993,
+   "age": "55-74 years",
+   "suicides_no": 35444
+ },
+ {
+   "year": 1993,
+   "age": "75+ years",
+   "suicides_no": 12538
+ },
+ {
+   "year": 1994,
+   "age": "15-24 years",
+   "suicides_no": 12870
+ },
+ {
+   "year": 1994,
+   "age": "25-34 years",
+   "suicides_no": 23873
+ },
+ {
+   "year": 1994,
+   "age": "35-54 years",
+   "suicides_no": 55271
+ },
+ {
+   "year": 1994,
+   "age": "5-14 years",
+   "suicides_no": 816
+ },
+ {
+   "year": 1994,
+   "age": "55-74 years",
+   "suicides_no": 37683
+ },
+ {
+   "year": 1994,
+   "age": "75+ years",
+   "suicides_no": 12429
+ },
+ {
+   "year": 1995,
+   "age": "15-24 years",
+   "suicides_no": 14051
+ },
+ {
+   "year": 1995,
+   "age": "25-34 years",
+   "suicides_no": 23889
+ },
+ {
+   "year": 1995,
+   "age": "35-54 years",
+   "suicides_no": 57599
+ },
+ {
+   "year": 1995,
+   "age": "5-14 years",
+   "suicides_no": 862
+ },
+ {
+   "year": 1995,
+   "age": "55-74 years",
+   "suicides_no": 39382
+ },
+ {
+   "year": 1995,
+   "age": "75+ years",
+   "suicides_no": 12796
+ },
+ {
+   "year": 1996,
+   "age": "15-24 years",
+   "suicides_no": 13743
+ },
+ {
+   "year": 1996,
+   "age": "25-34 years",
+   "suicides_no": 23136
+ },
+ {
+   "year": 1996,
+   "age": "35-54 years",
+   "suicides_no": 56114
+ },
+ {
+   "year": 1996,
+   "age": "5-14 years",
+   "suicides_no": 799
+ },
+ {
+   "year": 1996,
+   "age": "55-74 years",
+   "suicides_no": 38754
+ },
+ {
+   "year": 1996,
+   "age": "75+ years",
+   "suicides_no": 12352
+ },
+ {
+   "year": 1997,
+   "age": "15-24 years",
+   "suicides_no": 13279
+ },
+ {
+   "year": 1997,
+   "age": "25-34 years",
+   "suicides_no": 21166
+ },
+ {
+   "year": 1997,
+   "age": "35-54 years",
+   "suicides_no": 51538
+ },
+ {
+   "year": 1997,
+   "age": "5-14 years",
+   "suicides_no": 737
+ },
+ {
+   "year": 1997,
+   "age": "55-74 years",
+   "suicides_no": 36876
+ },
+ {
+   "year": 1997,
+   "age": "75+ years",
+   "suicides_no": 12242
+ },
+ {
+   "year": 1998,
+   "age": "15-24 years",
+   "suicides_no": 13140
+ },
+ {
+   "year": 1998,
+   "age": "25-34 years",
+   "suicides_no": 20268
+ },
+ {
+   "year": 1998,
+   "age": "35-54 years",
+   "suicides_no": 50478
+ },
+ {
+   "year": 1998,
+   "age": "5-14 years",
+   "suicides_no": 733
+ },
+ {
+   "year": 1998,
+   "age": "55-74 years",
+   "suicides_no": 35562
+ },
+ {
+   "year": 1998,
+   "age": "75+ years",
+   "suicides_no": 12091
+ },
+ {
+   "year": 1999,
+   "age": "15-24 years",
+   "suicides_no": 14336
+ },
+ {
+   "year": 1999,
+   "age": "25-34 years",
+   "suicides_no": 21077
+ },
+ {
+   "year": 1999,
+   "age": "35-54 years",
+   "suicides_no": 55385
+ },
+ {
+   "year": 1999,
+   "age": "5-14 years",
+   "suicides_no": 881
+ },
+ {
+   "year": 1999,
+   "age": "55-74 years",
+   "suicides_no": 37246
+ },
+ {
+   "year": 1999,
+   "age": "75+ years",
+   "suicides_no": 12330
+ },
+ {
+   "year": 2000,
+   "age": "15-24 years",
+   "suicides_no": 14606
+ },
+ {
+   "year": 2000,
+   "age": "25-34 years",
+   "suicides_no": 21325
+ },
+ {
+   "year": 2000,
+   "age": "35-54 years",
+   "suicides_no": 56765
+ },
+ {
+   "year": 2000,
+   "age": "5-14 years",
+   "suicides_no": 924
+ },
+ {
+   "year": 2000,
+   "age": "55-74 years",
+   "suicides_no": 35679
+ },
+ {
+   "year": 2000,
+   "age": "75+ years",
+   "suicides_no": 12522
+ },
+ {
+   "year": 2001,
+   "age": "15-24 years",
+   "suicides_no": 14717
+ },
+ {
+   "year": 2001,
+   "age": "25-34 years",
+   "suicides_no": 21092
+ },
+ {
+   "year": 2001,
+   "age": "35-54 years",
+   "suicides_no": 56534
+ },
+ {
+   "year": 2001,
+   "age": "5-14 years",
+   "suicides_no": 918
+ },
+ {
+   "year": 2001,
+   "age": "55-74 years",
+   "suicides_no": 33917
+ },
+ {
+   "year": 2001,
+   "age": "75+ years",
+   "suicides_no": 12366
+ },
+ {
+   "year": 2002,
+   "age": "15-24 years",
+   "suicides_no": 14287
+ },
+ {
+   "year": 2002,
+   "age": "25-34 years",
+   "suicides_no": 21034
+ },
+ {
+   "year": 2002,
+   "age": "35-54 years",
+   "suicides_no": 55188
+ },
+ {
+   "year": 2002,
+   "age": "5-14 years",
+   "suicides_no": 777
+ },
+ {
+   "year": 2002,
+   "age": "55-74 years",
+   "suicides_no": 33572
+ },
+ {
+   "year": 2002,
+   "age": "75+ years",
+   "suicides_no": 12738
+ },
+ {
+   "year": 2003,
+   "age": "15-24 years",
+   "suicides_no": 13540
+ },
+ {
+   "year": 2003,
+   "age": "25-34 years",
+   "suicides_no": 19838
+ },
+ {
+   "year": 2003,
+   "age": "35-54 years",
+   "suicides_no": 53560
+ },
+ {
+   "year": 2003,
+   "age": "5-14 years",
+   "suicides_no": 679
+ },
+ {
+   "year": 2003,
+   "age": "55-74 years",
+   "suicides_no": 32395
+ },
+ {
+   "year": 2003,
+   "age": "75+ years",
+   "suicides_no": 13091
+ },
+ {
+   "year": 2004,
+   "age": "15-24 years",
+   "suicides_no": 12788
+ },
+ {
+   "year": 2004,
+   "age": "25-34 years",
+   "suicides_no": 18535
+ },
+ {
+   "year": 2004,
+   "age": "35-54 years",
+   "suicides_no": 49952
+ },
+ {
+   "year": 2004,
+   "age": "5-14 years",
+   "suicides_no": 668
+ },
+ {
+   "year": 2004,
+   "age": "55-74 years",
+   "suicides_no": 29892
+ },
+ {
+   "year": 2004,
+   "age": "75+ years",
+   "suicides_no": 12529
+ },
+ {
+   "year": 2005,
+   "age": "15-24 years",
+   "suicides_no": 12030
+ },
+ {
+   "year": 2005,
+   "age": "25-34 years",
+   "suicides_no": 17995
+ },
+ {
+   "year": 2005,
+   "age": "35-54 years",
+   "suicides_no": 46623
+ },
+ {
+   "year": 2005,
+   "age": "5-14 years",
+   "suicides_no": 543
+ },
+ {
+   "year": 2005,
+   "age": "55-74 years",
+   "suicides_no": 29256
+ },
+ {
+   "year": 2005,
+   "age": "75+ years",
+   "suicides_no": 12463
+ },
+ {
+   "year": 2006,
+   "age": "15-24 years",
+   "suicides_no": 11385
+ },
+ {
+   "year": 2006,
+   "age": "25-34 years",
+   "suicides_no": 17106
+ },
+ {
+   "year": 2006,
+   "age": "35-54 years",
+   "suicides_no": 43197
+ },
+ {
+   "year": 2006,
+   "age": "5-14 years",
+   "suicides_no": 511
+ },
+ {
+   "year": 2006,
+   "age": "55-74 years",
+   "suicides_no": 27791
+ },
+ {
+   "year": 2006,
+   "age": "75+ years",
+   "suicides_no": 12464
+ },
+ {
+   "year": 2007,
+   "age": "15-24 years",
+   "suicides_no": 11750
+ },
+ {
+   "year": 2007,
+   "age": "25-34 years",
+   "suicides_no": 17478
+ },
+ {
+   "year": 2007,
+   "age": "35-54 years",
+   "suicides_no": 42175
+ },
+ {
+   "year": 2007,
+   "age": "5-14 years",
+   "suicides_no": 536
+ },
+ {
+   "year": 2007,
+   "age": "55-74 years",
+   "suicides_no": 27669
+ },
+ {
+   "year": 2007,
+   "age": "75+ years",
+   "suicides_no": 12906
+ },
+ {
+   "year": 2008,
+   "age": "15-24 years",
+   "suicides_no": 11382
+ },
+ {
+   "year": 2008,
+   "age": "25-34 years",
+   "suicides_no": 16999
+ },
+ {
+   "year": 2008,
+   "age": "35-54 years",
+   "suicides_no": 41752
+ },
+ {
+   "year": 2008,
+   "age": "5-14 years",
+   "suicides_no": 484
+ },
+ {
+   "year": 2008,
+   "age": "55-74 years",
+   "suicides_no": 27776
+ },
+ {
+   "year": 2008,
+   "age": "75+ years",
+   "suicides_no": 13003
+ },
+ {
+   "year": 2009,
+   "age": "15-24 years",
+   "suicides_no": 11372
+ },
+ {
+   "year": 2009,
+   "age": "25-34 years",
+   "suicides_no": 17642
+ },
+ {
+   "year": 2009,
+   "age": "35-54 years",
+   "suicides_no": 42786
+ },
+ {
+   "year": 2009,
+   "age": "5-14 years",
+   "suicides_no": 565
+ },
+ {
+   "year": 2009,
+   "age": "55-74 years",
+   "suicides_no": 28534
+ },
+ {
+   "year": 2009,
+   "age": "75+ years",
+   "suicides_no": 12573
+ },
+ {
+   "year": 2010,
+   "age": "15-24 years",
+   "suicides_no": 10521
+ },
+ {
+   "year": 2010,
+   "age": "25-34 years",
+   "suicides_no": 16576
+ },
+ {
+   "year": 2010,
+   "age": "35-54 years",
+   "suicides_no": 40325
+ },
+ {
+   "year": 2010,
+   "age": "5-14 years",
+   "suicides_no": 478
+ },
+ {
+   "year": 2010,
+   "age": "55-74 years",
+   "suicides_no": 28011
+ },
+ {
+   "year": 2010,
+   "age": "75+ years",
+   "suicides_no": 12446
+ },
+ {
+   "year": 2011,
+   "age": "15-24 years",
+   "suicides_no": 9947
+ },
+ {
+   "year": 2011,
+   "age": "25-34 years",
+   "suicides_no": 15706
+ },
+ {
+   "year": 2011,
+   "age": "35-54 years",
+   "suicides_no": 38451
+ },
+ {
+   "year": 2011,
+   "age": "5-14 years",
+   "suicides_no": 456
+ },
+ {
+   "year": 2011,
+   "age": "55-74 years",
+   "suicides_no": 27515
+ },
+ {
+   "year": 2011,
+   "age": "75+ years",
+   "suicides_no": 12656
+ },
+ {
+   "year": 2012,
+   "age": "15-24 years",
+   "suicides_no": 9181
+ },
+ {
+   "year": 2012,
+   "age": "25-34 years",
+   "suicides_no": 15353
+ },
+ {
+   "year": 2012,
+   "age": "35-54 years",
+   "suicides_no": 37128
+ },
+ {
+   "year": 2012,
+   "age": "5-14 years",
+   "suicides_no": 432
+ },
+ {
+   "year": 2012,
+   "age": "55-74 years",
+   "suicides_no": 27130
+ },
+ {
+   "year": 2012,
+   "age": "75+ years",
+   "suicides_no": 12943
+ },
+ {
+   "year": 2013,
+   "age": "15-24 years",
+   "suicides_no": 7686
+ },
+ {
+   "year": 2013,
+   "age": "25-34 years",
+   "suicides_no": 14006
+ },
+ {
+   "year": 2013,
+   "age": "35-54 years",
+   "suicides_no": 34455
+ },
+ {
+   "year": 2013,
+   "age": "5-14 years",
+   "suicides_no": 381
+ },
+ {
+   "year": 2013,
+   "age": "55-74 years",
+   "suicides_no": 25875
+ },
+ {
+   "year": 2013,
+   "age": "75+ years",
+   "suicides_no": 12175
+ },
+ {
+   "year": 2014,
+   "age": "15-24 years",
+   "suicides_no": 7842
+ },
+ {
+   "year": 2014,
+   "age": "25-34 years",
+   "suicides_no": 14736
+ },
+ {
+   "year": 2014,
+   "age": "35-54 years",
+   "suicides_no": 35364
+ },
+ {
+   "year": 2014,
+   "age": "5-14 years",
+   "suicides_no": 387
+ },
+ {
+   "year": 2014,
+   "age": "55-74 years",
+   "suicides_no": 26885
+ },
+ {
+   "year": 2014,
+   "age": "75+ years",
+   "suicides_no": 13452
+ },
+ {
+   "year": 2015,
+   "age": "15-24 years",
+   "suicides_no": 6354
+ },
+ {
+   "year": 2015,
+   "age": "25-34 years",
+   "suicides_no": 12574
+ },
+ {
+   "year": 2015,
+   "age": "35-54 years",
+   "suicides_no": 28816
+ },
+ {
+   "year": 2015,
+   "age": "5-14 years",
+   "suicides_no": 372
+ },
+ {
+   "year": 2015,
+   "age": "55-74 years",
+   "suicides_no": 22602
+ },
+ {
+   "year": 2015,
+   "age": "75+ years",
+   "suicides_no": 11118
+ }
+]
