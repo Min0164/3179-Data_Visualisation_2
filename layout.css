@@ -222,17 +222,17 @@ body, html {
 }
 
 #connected_dot{
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 40px;
+    margin-right: 120px;
     margin-top: 20px;
  
 }
 
 
 #text_dot{
-    margin-left: 80px;
-    margin-right: 60px;
-    margin-top: -50px;
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-top: -40px;
     margin-bottom: 10px;
     text-align:justify;
     font-size: 22px;
