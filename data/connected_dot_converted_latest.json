@@ -1,0 +1,498 @@
+[
+ {
+   "year": 1985,
+   "sex": "female",
+   "total_suicides_no": 34098,
+   "diff": 23842,
+   "suicides_no": 10256,
+   "population": 129952443
+ },
+ {
+   "year": 1985,
+   "sex": "male",
+   "total_suicides_no": 34098,
+   "diff": 10256,
+   "suicides_no": 23842,
+   "population": 123441937
+ },
+ {
+   "year": 1986,
+   "sex": "female",
+   "total_suicides_no": 34451,
+   "diff": 24220,
+   "suicides_no": 10231,
+   "population": 132239387
+ },
+ {
+   "year": 1986,
+   "sex": "male",
+   "total_suicides_no": 34451,
+   "diff": 10231,
+   "suicides_no": 24220,
+   "population": 125791443
+ },
+ {
+   "year": 1987,
+   "sex": "female",
+   "total_suicides_no": 46819,
+   "diff": 33519,
+   "suicides_no": 13300,
+   "population": 164765834
+ },
+ {
+   "year": 1987,
+   "sex": "male",
+   "total_suicides_no": 46819,
+   "diff": 13300,
+   "suicides_no": 33519,
+   "population": 154349029
+ },
+ {
+   "year": 1988,
+   "sex": "female",
+   "total_suicides_no": 45785,
+   "diff": 32909,
+   "suicides_no": 12876,
+   "population": 165669551
+ },
+ {
+   "year": 1988,
+   "sex": "male",
+   "total_suicides_no": 45785,
+   "diff": 12876,
+   "suicides_no": 32909,
+   "population": 154255320
+ },
+ {
+   "year": 1989,
+   "sex": "female",
+   "total_suicides_no": 86718,
+   "diff": 64963,
+   "suicides_no": 21755,
+   "population": 248972849
+ },
+ {
+   "year": 1989,
+   "sex": "male",
+   "total_suicides_no": 86718,
+   "diff": 21755,
+   "suicides_no": 64963,
+   "population": 228510500
+ },
+ {
+   "year": 1990,
+   "sex": "female",
+   "total_suicides_no": 110322,
+   "diff": 82429,
+   "suicides_no": 27893,
+   "population": 318423984
+ },
+ {
+   "year": 1990,
+   "sex": "male",
+   "total_suicides_no": 110826,
+   "diff": 28397,
+   "suicides_no": 82429,
+   "population": 298851221
+ },
+ {
+   "year": 1991,
+   "sex": "female",
+   "total_suicides_no": 110826,
+   "diff": 82429,
+   "suicides_no": 28397,
+   "population": 329571357
+ },
+ {
+   "year": 1991,
+   "sex": "male",
+   "total_suicides_no": 116043,
+   "diff": 29088,
+   "suicides_no": 86955,
+   "population": 304079715
+ },
+ {
+   "year": 1992,
+   "sex": "female",
+   "total_suicides_no": 116043,
+   "diff": 86955,
+   "suicides_no": 29088,
+   "population": 327583186
+ },
+ {
+   "year": 1992,
+   "sex": "male",
+   "total_suicides_no": 125237,
+   "diff": 29823,
+   "suicides_no": 95414,
+   "population": 308045019
+ },
+ {
+   "year": 1993,
+   "sex": "female",
+   "total_suicides_no": 125237,
+   "diff": 95414,
+   "suicides_no": 29823,
+   "population": 332293456
+ },
+ {
+   "year": 1993,
+   "sex": "male",
+   "total_suicides_no": 135309,
+   "diff": 29968,
+   "suicides_no": 105341,
+   "population": 308076282
+ },
+ {
+   "year": 1994,
+   "sex": "female",
+   "total_suicides_no": 142942,
+   "diff": 112974,
+   "suicides_no": 29968,
+   "population": 337576481
+ },
+ {
+   "year": 1994,
+   "sex": "male",
+   "total_suicides_no": 142942,
+   "diff": 29968,
+   "suicides_no": 112974,
+   "population": 312535100
+ },
+ {
+   "year": 1995,
+   "sex": "female",
+   "total_suicides_no": 148579,
+   "diff": 117075,
+   "suicides_no": 31504,
+   "population": 348195526
+ },
+ {
+   "year": 1995,
+   "sex": "male",
+   "total_suicides_no": 148579,
+   "diff": 31504,
+   "suicides_no": 117075,
+   "population": 324904724
+ },
+ {
+   "year": 1996,
+   "sex": "female",
+   "total_suicides_no": 144898,
+   "diff": 114655,
+   "suicides_no": 30243,
+   "population": 346841472
+ },
+ {
+   "year": 1996,
+   "sex": "male",
+   "total_suicides_no": 144898,
+   "diff": 30243,
+   "suicides_no": 114655,
+   "population": 324942473
+ },
+ {
+   "year": 1997,
+   "sex": "female",
+   "total_suicides_no": 135838,
+   "diff": 107030,
+   "suicides_no": 28808,
+   "population": 330392953
+ },
+ {
+   "year": 1997,
+   "sex": "male",
+   "total_suicides_no": 134792,
+   "diff": 27762,
+   "suicides_no": 107030,
+   "population": 309099631
+ },
+ {
+   "year": 1998,
+   "sex": "female",
+   "total_suicides_no": 134792,
+   "diff": 107030,
+   "suicides_no": 27762,
+   "population": 334159899
+ },
+ {
+   "year": 1998,
+   "sex": "male",
+   "total_suicides_no": 133892,
+   "diff": 29382,
+   "suicides_no": 104510,
+   "population": 312547101
+ },
+ {
+   "year": 1999,
+   "sex": "female",
+   "total_suicides_no": 133892,
+   "diff": 104510,
+   "suicides_no": 29382,
+   "population": 352216749
+ },
+ {
+   "year": 1999,
+   "sex": "male",
+   "total_suicides_no": 140612,
+   "diff": 28739,
+   "suicides_no": 111873,
+   "population": 329126243
+ },
+ {
+   "year": 2000,
+   "sex": "female",
+   "total_suicides_no": 140612,
+   "diff": 111873,
+   "suicides_no": 28739,
+   "population": 353151044
+ },
+ {
+   "year": 2000,
+   "sex": "male",
+   "total_suicides_no": 140591,
+   "diff": 27509,
+   "suicides_no": 113082,
+   "population": 329455001
+ },
+ {
+   "year": 2001,
+   "sex": "female",
+   "total_suicides_no": 139544,
+   "diff": 112035,
+   "suicides_no": 27509,
+   "population": 356268981
+ },
+ {
+   "year": 2001,
+   "sex": "male",
+   "total_suicides_no": 139544,
+   "diff": 27509,
+   "suicides_no": 112035,
+   "population": 330845043
+ },
+ {
+   "year": 2002,
+   "sex": "female",
+   "total_suicides_no": 137596,
+   "diff": 109731,
+   "suicides_no": 27865,
+   "population": 353173624
+ },
+ {
+   "year": 2002,
+   "sex": "male",
+   "total_suicides_no": 137596,
+   "diff": 27865,
+   "suicides_no": 109731,
+   "population": 327409912
+ },
+ {
+   "year": 2003,
+   "sex": "female",
+   "total_suicides_no": 133103,
+   "diff": 106207,
+   "suicides_no": 26896,
+   "population": 354395072
+ },
+ {
+   "year": 2003,
+   "sex": "male",
+   "total_suicides_no": 133103,
+   "diff": 26896,
+   "suicides_no": 106207,
+   "population": 328141257
+ },
+ {
+   "year": 2004,
+   "sex": "female",
+   "total_suicides_no": 124364,
+   "diff": 98862,
+   "suicides_no": 25502,
+   "population": 347083917
+ },
+ {
+   "year": 2004,
+   "sex": "male",
+   "total_suicides_no": 123307,
+   "diff": 24445,
+   "suicides_no": 98862,
+   "population": 321688054
+ },
+ {
+   "year": 2005,
+   "sex": "female",
+   "total_suicides_no": 123307,
+   "diff": 98862,
+   "suicides_no": 24445,
+   "population": 341397577
+ },
+ {
+   "year": 2005,
+   "sex": "male",
+   "total_suicides_no": 117760,
+   "diff": 23295,
+   "suicides_no": 94465,
+   "population": 316844460
+ },
+ {
+   "year": 2006,
+   "sex": "female",
+   "total_suicides_no": 117760,
+   "diff": 94465,
+   "suicides_no": 23295,
+   "population": 338834086
+ },
+ {
+   "year": 2006,
+   "sex": "male",
+   "total_suicides_no": 112722,
+   "diff": 23563,
+   "suicides_no": 89159,
+   "population": 316156049
+ },
+ {
+   "year": 2007,
+   "sex": "female",
+   "total_suicides_no": 112722,
+   "diff": 89159,
+   "suicides_no": 23563,
+   "population": 355547943
+ },
+ {
+   "year": 2007,
+   "sex": "male",
+   "total_suicides_no": 112453,
+   "diff": 23502,
+   "suicides_no": 88951,
+   "population": 330378388
+ },
+ {
+   "year": 2008,
+   "sex": "female",
+   "total_suicides_no": 111396,
+   "diff": 87894,
+   "suicides_no": 23502,
+   "population": 352843707
+ },
+ {
+   "year": 2008,
+   "sex": "male",
+   "total_suicides_no": 111396,
+   "diff": 23502,
+   "suicides_no": 87894,
+   "population": 327757630
+ },
+ {
+   "year": 2009,
+   "sex": "female",
+   "total_suicides_no": 113472,
+   "diff": 90431,
+   "suicides_no": 23041,
+   "population": 388870912
+ },
+ {
+   "year": 2009,
+   "sex": "male",
+   "total_suicides_no": 113472,
+   "diff": 23041,
+   "suicides_no": 90431,
+   "population": 361848930
+ },
+ {
+   "year": 2010,
+   "sex": "female",
+   "total_suicides_no": 108357,
+   "diff": 86147,
+   "suicides_no": 22210,
+   "population": 387689456
+ },
+ {
+   "year": 2010,
+   "sex": "male",
+   "total_suicides_no": 108357,
+   "diff": 22210,
+   "suicides_no": 86147,
+   "population": 363901815
+ },
+ {
+   "year": 2011,
+   "sex": "female",
+   "total_suicides_no": 104731,
+   "diff": 83055,
+   "suicides_no": 21676,
+   "population": 385795943
+ },
+ {
+   "year": 2011,
+   "sex": "male",
+   "total_suicides_no": 104431,
+   "diff": 21376,
+   "suicides_no": 83055,
+   "population": 361395370
+ },
+ {
+   "year": 2012,
+   "sex": "female",
+   "total_suicides_no": 104431,
+   "diff": 83055,
+   "suicides_no": 21376,
+   "population": 385367589
+ },
+ {
+   "year": 2012,
+   "sex": "male",
+   "total_suicides_no": 100695,
+   "diff": 19904,
+   "suicides_no": 80791,
+   "population": 360237560
+ },
+ {
+   "year": 2013,
+   "sex": "female",
+   "total_suicides_no": 100695,
+   "diff": 80791,
+   "suicides_no": 19904,
+   "population": 368277270
+ },
+ {
+   "year": 2013,
+   "sex": "male",
+   "total_suicides_no": 95562,
+   "diff": 20888,
+   "suicides_no": 74674,
+   "population": 344707861
+ },
+ {
+   "year": 2014,
+   "sex": "female",
+   "total_suicides_no": 95562,
+   "diff": 74674,
+   "suicides_no": 20888,
+   "population": 391837041
+ },
+ {
+   "year": 2014,
+   "sex": "male",
+   "total_suicides_no": 95282,
+   "diff": 17504,
+   "suicides_no": 77778,
+   "population": 366128097
+ },
+ {
+   "year": 2015,
+   "sex": "female",
+   "total_suicides_no": 81836,
+   "diff": 64332,
+   "suicides_no": 17504,
+   "population": 345294304
+ },
+ {
+   "year": 2015,
+   "sex": "male",
+   "total_suicides_no": 81836,
+   "diff": 17504,
+   "suicides_no": 64332,
+   "population": 321537486
+ }
+]
