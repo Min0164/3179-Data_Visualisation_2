@@ -9,11 +9,13 @@
     "layer": [
       {
         "encoding": {
-          "x": {"field": "year", "type": "ordinal"},
-          "y": {"field": "suicides_no", "type": "quantitative"},
+          "x": {"field": "year", "type": "ordinal","axis":{"titleColor":"#646262","titleFontSize":14}},
+          "y": {"field": "suicides_no", "type": "quantitative","axis":{"titleColor":"#646262","titleFontSize":14}},
           "color": {"field": "age", "type": "nominal"}
+          
         
         },
+  
         
         "layer": [
           {"mark": "line"},
@@ -36,7 +38,11 @@
                   "value": 1
                 },
                 "value": 0
-              }
+              },
+              "tooltip": [
+                {"field": "year", "type": "ordinal","title":"Year"},
+                {"field": "suicides_no", "type": "quantitative","title":"Suicide cases"}
+              ]
             }
           }
         ]
@@ -47,14 +53,23 @@
           {
             "mark": {"type": "rule", "color": "gray"},
             "encoding": {
-              "x": {"type": "ordinal", "field": "year"}
+              "x": {"type": "ordinal", "field": "year","axis":{"titleColor":"#646262","titleFontSize":14}}
+              ,
+              "tooltip": [
+                {"field": "year", "type": "ordinal","title":"Year"},
+                {"field": "suicides_no", "type": "quantitative","title":"Suicide cases"}
+              ]
             }
           },
           {
             "encoding": {
               "text": {"type": "quantitative", "field": "suicides_no"},
-              "x": {"type": "ordinal", "field": "year"},
-              "y": {"type": "quantitative", "field": "suicide_no"}
+              "x": {"type": "ordinal", "field": "year","axis":{"titleColor":"#646262","titleFontSize":14}},
+              "y": {"type": "quantitative", "field": "suicide_no","axis":{"titleColor":"#646262","titleFontSize":14}},
+              "tooltip": [
+                {"field": "year", "type": "ordinal","title":"Year"},
+                {"field": "suicides_no", "type": "quantitative","title":"Suicide cases"}
+              ]
             },
             "layer": [
               {
@@ -70,7 +85,11 @@
               {
                 "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5},
                 "encoding": {
-                  "color": {"type": "nominal", "field": "age"}
+                  "color": {"type": "nominal", "field": "age"},
+                  "tooltip": [
+                    {"field": "year", "type": "ordinal","title":"Year"},
+                    {"field": "suicides_no", "type": "quantitative","title":"Suicide cases"}
+                  ]
                 }
               }
             ]

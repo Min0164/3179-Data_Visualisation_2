@@ -187,14 +187,14 @@ body, html {
 }
 #bubble_plot1{
     margin-left: 50px;
-    margin-right: 30px;
+    margin-right: 20px;
     margin-top: 5px;
     
     
 }
 
 #bubble_plot2{
-    margin-left: 5px;
+    margin-left: 3px;
     margin-right: 80px;
     margin-top: -20px;
     
@@ -222,8 +222,8 @@ body, html {
 }
 
 #connected_dot{
-    margin-left: 40px;
-    margin-right: 120px;
+    margin-left: 20px;
+    margin-right: 140px;
     margin-top: 20px;
  
 }

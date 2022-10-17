@@ -5,6 +5,11 @@
     "data": {
       "url": "https://raw.githubusercontent.com/Min0164/3179-Data_Visualisation_2/main/data/bubble_chart_data.csv"
     },
+    "title": {
+      "text": "Suicide rate per 100,000 population against GDP per capita",
+      "color":"#646262",
+      "fontSize": 16
+    },
     "params": [
         {
             "name": "Year_selection",
@@ -30,13 +35,13 @@
             "field": "gdp_per_capita ($)",
             "type": "quantitative",
             "scale": {"domain": [0.03, 13]},
-            "axis": {"tickCount": 15, "title": "GDP per capita in thousands"}
+            "axis": {"tickCount": 15, "title": "GDP per capita in thousands","titleColor":"#646262"}
           },
           "y": {
             "field": "Suicide rate per 100,000 population",
             "type": "quantitative",
             "scale": {"domain": [0.4, 53.5]},
-            "axis": {"tickCount": 10, "title": "Suicide rate per 100,000 population"}
+            "axis": {"tickCount": 10, "title": "Suicide rate per 100,000 population","titleColor":"#646262"}
           }},
     "layer": [
       {
@@ -102,9 +107,9 @@
           "type": "text",
           "align": "right",
           "baseline": "bottom",
-          "dx": -12,
-          "fontSize": 11.5,
-          "fontStyle": "italic",
+          
+          "fontSize": 12,
+          "fontStyle": "normal",
           "fontWeight":"bold"
         },
         "encoding": {
