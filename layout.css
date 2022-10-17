@@ -1,134 +1,309 @@
+/*font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
 /* tittle of visualisation*/
+body, html {
+    margin: 20px;
+    padding: 0px;
+   
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width:100%;
+    min-width:1500px;
+    height:auto;
+  
+    
+}
+
+.container{
+    width:100%;
+    max-width:1000px;
+    height:auto;
+   
+    
+}
+
+.pure-g {
+    margin-bottom: 20px;
+  }
+    
+.blank {
+    height: 30px;
+  }
+  
+#blank {
+    height: 10px;
+  }
+
+
 
 #Title_Visualisation {
-    margin-left: 90px;
-    margin-right:90px ;
+    
     margin-top: 30px;
     margin-bottom: -40px;
+    margin-right: 30px;
+    margin-left: -10px;
     
     
     text-align: center;
     color: rgb(144, 7, 7);
     border-color: black;
     flood-color: rgb(96, 4, 4);
-    font-size: 50px;
+    font-size: 90px;
+    font-family: 'Roboto', sans-serif;
+    border: 10px;
+    font-weight: bold;
+
+   
 }
 
 
 #divider{
     margin-left: 50px;
-    margin-right: 90px;
+    margin-right: 40px;
     margin-top: -50;
+    color:rgb(188, 61, 61);
+    opacity: 0.8;
+    size: 3mm;
+    stroke-width: 5%;
 
 
 }
 #divider2{
-    margin-left:100px;
-    margin-right: 100px;
-    margin-top: -50px;
-    color:rgb(188, 61, 61);
+    margin-left:50px;
+    margin-right: 40px;
+    margin-top: -52px;
+    color:rgb(200, 189, 189);
     size: 10mm;
+    opacity: 0.5;
    
 
 }
 
-#section1{
-    margin-left: 50px;
-    
-    font-size: 35px;
+#divider3{
+    margin-left:50px;
+    margin-right: 40px;
+    margin-top: -52px;
+    color:rgba(162, 153, 153, 0.904);
+    size: 10mm;
+    opacity: 0.8;
    
 
 }
 
-#sub-tittle{
-    
-    font-size: 42px;
-    border: 0in;
-   
-
-}
-
-.subsection{
-    
-    margin-left: 50px;
-    color:rgb(99, 94, 94);
-       
-
-}
-
-#choropleth_map{
-    
-    margin-left: 50px;
-    margin-right: 20px;
-
-
-}
-
-
-
-.description_raw_line{
-    
-    margin-left: 50px;
+.Intro_1{
+    margin-left: 100px;
     margin-right: 50px;
-    text-align: left;
-   
-   
+    margin-top: -10px;
+    margin-bottom: 10px;
+    text-align:justify;
+    font-size: 22px;
+    font-weight: 8px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(63, 62, 62);
+    font-display: 8px;
+}
+.Intro_2{
+    margin-left: 30px;
+    margin-right: 130px;
+    margin-top: -10px;
+    text-align: justify;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(63, 62, 62);
+    font-weight: 8px;
+    font-display: 8px;
+}
+
+#Intro_3{
+    margin-left: 30px;
+    margin-right: 130px;
+    margin-top: -30px;
+    text-align: justify;
+    font-size: 22px;
+    color: rgb(63, 62, 62);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 8px;
+}
+.title{
+    margin-left: 60px;
+    margin-right: 80px;
+    text-align:center;
+    font-size: 36px;
+    background-color:rgb(244, 232, 232);
+    box-shadow: 5cm;
+    background: size 5px;
+    background-blend-mode: color-burn;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 
 }
 
-#raw_line{
+#map_line{
     
-    margin-left: 10px;
-    margin-right: 20px;
-   
-   
-   
+    margin-left: 20px;
+    margin-right: 90px;
+    margin-top: -50px;
+
 
 }
 
 
-.description_bump_chart{
-    
-    margin-left: 50px;
-    margin-right: 50px;
-    text-align: left;
-   
-   
-
-}
 
 #bump_chart{
     
-    margin-left: 10px;
-    margin-right: 20px;
+    margin-left: 20px;
+    margin-right: 90px;
 
 }
 
-#section2{
-    margin-left: 50px;
-    
-    font-size: 35px;
-   
 
-}
-.description_correlation{
-    
-    margin-left: 50px;
+.upper_text{
+    margin-left: 110px;
     margin-right: 50px;
-    margin-bottom: 70px;
-    text-align: left;
-   
-   
+    margin-top: -10px;
+    text-align: justify;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(63, 62, 62);
+    font-weight: 8px;
+    font-display: 8px;
 
 }
-
-#heat_map{
+.upper_text2{
+    margin-left: 40px;
+    margin-right: 130px;
+    margin-top: -12px;
+    text-align: justify;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(63, 62, 62);
+    font-weight: 8px;
+    font-display: 8px;
     
-    margin-left: 15px;
-    margin-right: 20px;
-    margin-top: 70px;
 
+}
+#bubble_plot1{
+    margin-left: 50px;
+    margin-right: 30px;
+    margin-top: 5px;
+    
+    
+}
+
+#bubble_plot2{
+    margin-left: 5px;
+    margin-right: 80px;
+    margin-top: -20px;
+    
+    
+}
+#line_chart{
+    margin-left: 70px;
+    margin-right: 20px;
+    margin-top: 20px;
+ 
+}
+
+#population_pyramid{
+    margin-left: 70px;
+    margin-right: 30px;
+    margin-top: -20px;
+    
+ 
+}
+
+#line_chart{
+    margin-left: 70px;
+    margin-right: 30px;
+    margin-top: -20px;
+}
+
+#connected_dot{
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 20px;
+ 
 }
 
 
+#text_dot{
+    margin-left: 80px;
+    margin-right: 60px;
+    margin-top: -50px;
+    margin-bottom: 10px;
+    text-align:justify;
+    font-size: 22px;
+    font-weight: 8px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(63, 62, 62);
+    font-display: 8px;
+}
 
+
+.point{
+
+    color: black;
+    font-weight: bold;
+}
+
+#point2{
+
+    color: rgb(133, 17, 17);
+    font-weight: bold;
+}
+
+#color{
+
+    color:#8c510a;
+    font-weight: bold;
+}
+#color2{
+
+    color:#af8dc3;
+    font-weight: bold;
+}
+#color3{
+
+    color:#969696;
+    font-weight: bold;
+}
+#color4{
+
+    color:#fdae6b;
+    font-weight: bold;
+}
+
+#same_title{
+    color:  rgb(144, 7, 7);
+    font-weight: bold;
+}
+
+.chart_text{
+    margin-left: 100px;
+    margin-right: 0px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    text-align:justify;
+    font-size: 22px;
+    font-weight: 8px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(63, 62, 62);
+    font-display: 8px;
+}
+
+#disclaimer{
+    margin-left: 100px;
+    margin-right: 0px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    text-align:justify;
+    font-size: 18px;
+    font-weight: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: rgb(18, 34, 212);
+    font-display: 8px;
+}

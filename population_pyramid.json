@@ -1,0 +1,90 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A population pyramid for the US in 2000.",
+    
+    "data": { "url": "https://raw.githubusercontent.com/Min0164/3179-Data_Visualisation_2/main/data/groupby_gen_age_converted.json"},
+
+    "transform": [
+      
+      {"calculate": "datum.sex == 2 ? 'Female' : 'Male'", "as": "gender"}
+    ],
+    "spacing": 2,
+    "hconcat": [{
+        "width": 280,
+        "height": 300,
+      "transform": [{
+        "filter": {"field": "gender", "equal": "Female"}
+      }],
+      "title": "Female",
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "age", "axis": null, "sort": "descending"
+        },
+        "x": {
+          "field": "population",
+          "type": "quantitative",
+          "title": "Population ",
+          "scale": {"domain": [0,3000]},
+          "axis": {"tickCount": 10, "title": "Population/100k"},
+          "sort": "descending"
+        },
+        "color": {
+          "field": "gender",
+          "scale": {"range": ["#969696", "#fdae6b"]},
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "gender", "type": "nominal","title":"Sex"},
+          {"field": "population", "type": "quantitative","title":"Population","format":".0f"},
+          {"field": "age", "type": "quantitative", "title":"Age"}
+        ]
+      }
+    }, {
+      "width": 40,
+      "height":300,
+      "title":"Age",
+      "view": {"stroke": null},
+      "mark": {
+        "type": "text",
+        "align": "center"
+      },
+      "encoding": {
+        "y": {"field": "age", "type": "ordinal", "axis": null, "sort": "descending"},
+        "text": {"field": "age", "type": "quantitative"}
+      }
+    }, {
+        "width":280,
+        "height": 300,
+      "transform": [{
+        "filter": {"field": "gender", "equal": "Male"}
+      }],
+      "title": "Male",
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "age", "title": null,
+          "axis": null, "sort": "descending"
+        },
+        "x": {
+            "field": "population",
+            "type": "quantitative",
+            "title": "Population/100k",
+            "scale": {"domain": [0,3000]},
+            "axis": {"tickCount": 10, "title": "Population/100k"}},
+        "color": {
+          "field": "gender",
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "gender", "type": "nominal","title":"Sex"},
+          {"field": "population", "type": "quantitative","title":"Population","format":".0f"},
+          {"field": "age", "type": "quantitative", "title":"Age"}
+        ]
+      }
+    }],
+    "config": {
+      "view": {"stroke": null},
+      "axis": {"grid": false}
+    }
+  }

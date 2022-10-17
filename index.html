@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
@@ -11,99 +12,223 @@
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/grids-responsive-min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="CSS/styles.css" media="all">
     <script src="vega_lite_vis.js"></script>
     <link rel="stylesheet" href="layout.css">
-
-   
-
 </head>
 <body>
-    <div class="header">
+<div class="container">
+    <div class="page">
         
-             <h1 id="Title_Visualisation">Suicide Rate in Europe</h1>
-             <h1 id="divider">__________________________________________________________________</h1>
-             <h1 id="divider2">_____________________________________________________________</h1>
+        <div class="header">
+        
+            <h1 id="Title_Visualisation">Suicide Rate in Europe</h1>
+            <div class="blank"> </div>
+            <h1 id="divider">_______________________________________________________________________________________________</h1>
+            <h1 id="divider2">_______________________________________________________________________________________________</h1>
+            <h1 id="divider3">_______________________________________________________________________________________________</h1>
+        </div>
+
+        <!--1-->
+        <div class="blank"> </div>
+        <div class="pure-g">
+            <div class="pure-u-1-2">
+               
+                <p class="Intro_1">
+                Suicide is defined as a death caused by <span class="point">intentional self-harm</span>.
+                
+                </p>
+                
+                <p class="Intro_1">
+                The World Health Organization (WHO) and the Global Burden of Diseases 
+                study estimate that <span class="point">almost <span id="stat">800,000</span> people die from suicide</span> every year,
+                that is one person every 40 seconds, which shows that  suicide has become 
+                a serious public health issue and preventive measures need to be taken.           
+                </p>
+            <div class="blank"> </div>
+            </div>
+            <div class="pure-u-1-2">
+                
+                <p class="Intro_2">
+                The main focus of this visualization is the <span id="same_title">Suicide Rate in Europe.</span>
+                This visualisation shows how the suicide rate in Europe changed over the year <span class="point">from 1985 to 2015</span>,
+                <span class="point">factors</span> related to the suicide rate, and the suicide rate in different 
+                groups of people by <span class="point">gender and age.</span>
+                </p>
+                <div class="blank"> </div>
+            </div>
+        </div>
+
+        <!--map and rawline-->
+        
+        <div class="section_title">
+            <h1 class="title">Overall Trend of Suicide Rate in Europe from 1985 to 2015</h1>
+             <div class="blank"> </div>
+             
+        </div>
+        <div class="blank"> </div>
+        <div class="blank"> </div>
+        <div class="pure-g">
+            <div class="pure-u-1-4">
+               
+                <p class="chart_text">
+                    
+                    From year 1990 onwards, we can see that <span class="point">Eastern Europe(EE)</span> which is less developed
+                     than other region of Europe has relatively <span id="point2">high suicide rate</span> especially <span class="point">Lithuania</span>                     This shows that the development of a country may potentially effect the suicide rate.
+                     <br><br>
+                     For year between 1895 and 1899, due to lack 
+                    data we are not able to visualise the 
+                    overall trend of the suicide rate.
+                    </p>
+
+                
+                     <P id="disclaimer">
+                        
+                    <br><br>
+                    Click on the country in the map to observe the trend of the clicked country over the year in the line chart.
+                    
+                
+                </P>
+                     
+                </p>
+                <div class="blank"> </div>
+                <div class="blank"> </div>
+                
+                
+                
+               
+                <p class="chart_text">
+                    From the line ,we see that average suicide rate per 100,000 population in Europe 
+                    did not show significant changes, ranging between 13.56 and 19.37.
+                    <br><br>
+                   
+                    Furthermore, we can see that the majority of the nation has a suicide rate that is <span class="point">lower than the average rate</span>, with each point representing a different nation
+                    <br><br>
+The suicide rate per 100,000 people for each year show <span class="point"> variation with some outliers.</span>
+For instance, Lithuania in 2000.
+
+
+                    </p>
+            </div>
+            <div class="pure-u-3-4">
+                <div id="map_line"></div>        
+            </div>
+            
+        </div>
+
+        <!--bump chart-->
+        <div class="section_title">
+            
+                <h1 class="title">Top 10 countries with the highest suicide rate over the years</h1>
+        </div>
+      
+        <div class="blank"> </div>
+        <div class="pure-g">
+            <div class="pure-u-1-4">
+                <div class="blank"> </div>
+                <p class="chart_text">
+                    <br><br>
+                    From the bump chart, we can see that <span id="color">Lithuania</span> had the <span class="point"> highest</span> suicide rate in Europe <span class="point"> for 21 consecutive years</span>, starting from 1995 to 2015 since its suicide rate was recorded. 
+                    <br><br><br>
+                    <span id="color2">Russia</span> has shown a pattern of  increase and decrease in rank between years 1989 to 2007 and starting from the year 2007 Russia show a<span class="point"> lower rank </span>(out of top 3).
+                    
+                </p>
+                <div class="blank"> </div>
+                <div class="blank"> </div>
+                    
+             </div>
+            <div class="pure-u-3-4">
+                    <div id="bump_chart"></div>
+                    
+            </div>
+         </div>
+
+        <!--bubble chart-->
+        <div class="section_title">
+            
+            <h1 class="title">Correlation between different factors</h1>
     </div>
-    <div class="pure-g">
+  
+    <div class="blank"> </div>
+         
+         <div class="pure-g">
+            <div class="pure-u-1-2">
+                
+                <p class="upper_text">
+                   The bubble chart below show the correlation between the suicides
+                   rate per 100,000 population , and the Gross Domestic Product(GDP) in thousands.
+                   <br><br>
+                   From the chart is show a<span class="point"> weak positive relationship</span> where richer countries are 
+                   associated with higher rates of suicide.
+                   <br><br><br>
+                   Therefore, the suicide rate is <span class="point">not greatly</span> impacted by a nation's level of development.<br>
+                    
+                    </p>
+                    <div class="blank"> </div>
+                <div id="bubble_plot1"></div>
+         </div>
+
+         <div class="pure-u-1-2">
+            
+            <p class="upper_text2">
+                The bubble chart below show the correlation between Human Development Index (HDI) for year and the Gross Domestic Product(GDP) in thousands.
+                <br><br>
+                From the chart is show a <span class="point">strong positive relationship</span>,countries with higher GDP per capita has higher HDI per year.
+                <br><br>
+                Besides, by slide over the year we can observe that both HDI for year and GDP per capita of Europe show an<span class="point"> increasing pattern</span>.
+                </p>
+                <div class="blank"> </div>
+            <div id="bubble_plot2"></div>
+     </div>
+         
         
-        <div class="pure-u-1-1">
-            <h1 id="section1">1.   Suicide Rate for different Europe country over year (1985 to 2015) </h1>
-        </div>
-        <div class="pure-u-1-1">
-            <h2 class="subsection">Choropleth Map </h2>
-        </div>
-       
+     </div>
 
-        <div class="pure-u-1-1">
-            <div id="choropleth_map"></div>
-        </div>
-        <div class="pure-u-1-1">
-            <h2 class="subsection">How suicide rate for each country change and compare with average suicide rate</h2>
-        </div>
+      <!--age-->
+      <div class="section_title">
+            
+        <h1 class="title">Suicide rate in different groups of people by gender and age</h1>
+</div>
 
-        <div class="pure-u-2-5">
-            <p class="description_raw_line">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br>
-                 when an unknown printer took a galley of type and scrambled it to make a type<br>
-                specimen book. It has survived not only five centuries, but also the leap into<br>
-                electronic typesetting,remaining essentially unchanged. <br>
-
-            <p class="description_raw_line">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,<br>
-                 and more recently with desktop publishing software like Aldus PageMaker including versions of<br> 
-                 Lorem Ipsum.</p>
-        </div>
-        <div class="pure-u-3-5">
-            <div id="raw_line"></div>
-        </div>
-        <div class="pure-u-1">
-            <h2 class="subsection">Top-n country with highest suicide rate</h2>
-        </div>
-        <div class="pure-u-2-5">
-            <p class="description_bump_chart">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br>
-                 when an unknown printer took a galley of type and scrambled it to make a type<br>
-                specimen book. It has survived not only five centuries, but also the leap into<br>
-                electronic typesetting,remaining essentially unchanged. <br>
-
-            <p class="description_bump_chart">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,<br>
-                 and more recently with desktop publishing software like Aldus PageMaker including versions of<br> 
-                 Lorem Ipsum.</p>
-        </div>
-        <div class="pure-u-3-5">
-            <div id="bump_chart"></div>
-        </div>
-
-        <div class="pure-u-1-1">
-            <h1 id="section2">2. Factors that affect Suicide rate </h1>
-        </div>
-        <div class="pure-u-2-5">
-            <h2 class="subsection">Correlation</h2>
-            <p class="description_correlation">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br></p>
-            <p class="description_correlation">
-                 when an unknown printer took a galley of type and scrambled it to make a type<br>
-                specimen book. It has survived not only five centuries, but also the leap into<br>
-                electronic typesetting,remaining essentially unchanged. <br></p>
-
-            <div id="heat_map"></div>
-        </div>
-        <div class="pure-u-3-5">
-            <h2 class="subsection">
-                Suicide rate vs GDP per capita
-            </h2>
-            <div id="scatter_plot"></div>
-            <h2 class="subsection">
-                HDI for year vs GDP per capita
-            </h2>
-            <div id="scatter_plot2"></div>
-        </div>
+<div class="blank"> </div>
+<div class="pure-g">
+    <div class="pure-u-1-2">
         
+        <p class="Intro_1">
+       The population pyramid chart show that<span id="color3"> female</span> has<span class="point"> higher</span> population than <span id="color4">male</span> in Europe.
+       Most of the population has age between<span class="point"> 25 and 35.</span>
+         </p>
+         <div class="blank"> </div>
+         <div id="population_pyramid"></div>
+        <div class="blank"> </div>
+        <div class="blank"> </div>
+        <p class="Intro_1">
+            From the line chart we can observe that age between <span class="point">35 to 54 has higher </span> rate over the years.
+            <br><br>
+            Suicide rate for population with age 35 to 54and 54 to 74 are at peak at year 1995.
+            <br><br> 
+            
+        </p>
+        <div class="blank"> </div>
+        <div id="line_chart"></div>
+            
+     </div>
+    <div class="pure-u-1-2">
+        <div class="blank"> </div>
+        <p id="text_dot">
+        The connected dot plot show that male has higher suicide rate compare to female over the years in Europe.
+         </p>
+        <div id="connected_dot"></div>
+            
     </div>
+ </div>
 
+
+    </div> 
+</div>
     
 </body>
 </html>

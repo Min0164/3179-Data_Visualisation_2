@@ -1,0 +1,125 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A ranged dot plot that uses 'layer' to convey changing life expectancy for the five most populous countries (between 1955 and 2000).",
+    "data": {"url": "https://raw.githubusercontent.com/Min0164/3179-Data_Visualisation_2/main/data/connected_dot_converted.json"},
+    "width":450,
+    "height":1000,
+    "transform": [
+      {
+        "filter": {
+          "field": "year",
+          "oneOf": ["1985", "1986", "1987", "1988","1989","1990","1991","1992","1993","1994","1995","1996","1997","1998","1999",
+          "2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015"]
+        }
+      },
+      {
+        "filter": {
+          "field": "sex",
+          "oneOf": ["male", "female"]
+        }
+      }
+    ],
+    "encoding": {
+      "x": {
+        "field": "diff",
+        "type": "quantitative",
+        "title": "Suicide case(years)",
+        "scale": {"domain": [9800, 185000]},
+        "axis": {"tickCount": 15, "title": "Suicide cases (years)"}
+      },
+      "y": {
+        "field": "year",
+        "type": "ordinal",
+        "title": "Year",
+        "axis": {
+          "offset": 5,
+          "ticks": false,
+          "minExtent": 70,
+          "domain": false
+        }
+      }
+    },
+    "layer": [
+      {
+        "mark": "line",
+        "encoding": {
+          "detail": {
+            "field": "year",
+            "type": "ordinal"
+          },
+          "color": {"value": "#525252"},
+          "opacity":{"value":0.8}
+        }
+      },
+      {
+        "mark": {
+          "type": "point",
+          "filled": true
+        },
+        "encoding": {
+          "color": {
+            "field": "sex",
+            "type": "nominal",
+            "scale": {
+              "domain": ["male", "female"],
+              "range": ["#fdae6b","#969696"]
+            },
+            "title": "Gender"
+          },
+          "size": {"value": 150},
+          "opacity": {"value": 10},
+          "tooltip": [
+            {"field": "sex", "type": "nominal", "title": "Gender"},
+            {
+              "field": "suicides_no",
+              "type": "quantitative",
+              "title": ["Suicide number"]
+            },
+            {
+              "field": "diff",
+              "type": "quantitative",
+              "title": ["Difference from the total"]
+            },
+            {"field": "year", "type": "quantitative", "title": "Year"}
+          ]
+        }
+      },
+      {
+        "transform": [{
+          "filter": {
+            "field": "sex",
+            "equal": "male"
+          }
+        }],
+        "mark": {
+          "type": "point",
+          "filled": true,
+          "color":"black"
+        },
+        "encoding": {
+          "x": {
+            "field": "total_suicides_no",
+            "type": "quantitative",
+            "title":""
+          },
+          "y": {
+            "field": "year",
+            "type": "ordinal",
+            "title": ""
+            
+          },
+          "size": {"value": 150},
+          "opacity": {"value": 0.8},
+          "tooltip": [
+            
+            {
+              "field": "total_suicides_no",
+              "type": "quantitative",
+              "title": ["Total Suicides number"]
+            },
+            {"field": "year", "type": "quantitative", "title": "Year"}
+          ]
+        }
+      }
+    ]
+  }
