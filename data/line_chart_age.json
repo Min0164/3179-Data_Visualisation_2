@@ -1,0 +1,100 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/Min0164/3179-Data_Visualisation_2/main/data/line_chart.csv"
+    },
+    "config": {"legend": {"orient": "top-right"}},
+    "width": 600,
+    "height": 350,
+    "layer": [
+      {
+        "encoding": {
+          "x": {"field": "year", "type": "ordinal","axis":{"titleColor":"#646262","titleFontSize":14}},
+          "y": {"field": "suicides_no", "type": "quantitative","axis":{"titleColor":"#646262","titleFontSize":14}},
+          "color": {"field": "age", "type": "nominal"}
+          
+        
+        },
+  
+        
+        "layer": [
+          {"mark": "line"},
+          {
+            "params": [{
+              "name": "label",
+              "select": {
+                "type": "point",
+                "encodings": ["x"],
+                "nearest": true,
+                "on": "mouseover"
+              }
+            }],
+            "mark": "point",
+            "encoding": {
+              "opacity": {
+                "condition": {
+                  "param": "label",
+                  "empty": false,
+                  "value": 1
+                },
+                "value": 0
+              },
+              "tooltip": [
+                {"field": "year", "type": "ordinal","title":"Year"},
+                {"field": "suicides_no", "type": "quantitative","title":"Suicide cases"}
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "transform": [{"filter": {"param": "label", "empty": false}}],
+        "layer": [
+          {
+            "mark": {"type": "rule", "color": "gray"},
+            "encoding": {
+              "x": {"type": "ordinal", "field": "year","axis":{"titleColor":"#646262","titleFontSize":14}}
+              ,
+              "tooltip": [
+                {"field": "year", "type": "ordinal","title":"Year"},
+                {"field": "suicides_no", "type": "quantitative","title":"Suicide cases"}
+              ]
+            }
+          },
+          {
+            "encoding": {
+              "text": {"type": "quantitative", "field": "suicides_no"},
+              "x": {"type": "ordinal", "field": "year","axis":{"titleColor":"#646262","titleFontSize":14}},
+              "y": {"type": "quantitative", "field": "suicide_no","axis":{"titleColor":"#646262","titleFontSize":14}},
+              "tooltip": [
+                {"field": "year", "type": "ordinal","title":"Year"},
+                {"field": "suicides_no", "type": "quantitative","title":"Suicide cases"}
+              ]
+            },
+            "layer": [
+              {
+                "mark": {
+                  "type": "text",
+                  "stroke": "white",
+                  "strokeWidth": 2,
+                  "align": "left",
+                  "dx": 5,
+                  "dy": -5
+                }
+              },
+              {
+                "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5},
+                "encoding": {
+                  "color": {"type": "nominal", "field": "age"},
+                  "tooltip": [
+                    {"field": "year", "type": "ordinal","title":"Year"},
+                    {"field": "suicides_no", "type": "quantitative","title":"Suicide cases"}
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

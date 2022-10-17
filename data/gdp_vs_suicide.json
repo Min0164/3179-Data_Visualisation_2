@@ -1,0 +1,135 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 600,
+    "height": 500,
+    "data": {
+      "url": "https://raw.githubusercontent.com/Min0164/3179-Data_Visualisation_2/main/data/bubble_chart_data.csv"
+    },
+    "title": {
+      "text": "Suicide rate per 100,000 population against GDP per capita",
+      "color":"#646262",
+      "fontSize": 16
+    },
+    "params": [
+        {
+            "name": "Year_selection",
+            "value": 2010,
+            "bind": {
+                "input": "range",
+                "min": 1985,
+                "max": 2015,
+                "step": 1,
+                "name": "Year:  "
+            }
+          }
+      
+    ],
+    "transform": [
+      
+     
+      {"filter": "datum.year == Year_selection"}
+      
+    ],
+    "encoding": {
+        "x": {
+            "field": "gdp_per_capita ($)",
+            "type": "quantitative",
+            "scale": {"domain": [0.03, 13]},
+            "axis": {"tickCount": 15, "title": "GDP per capita in thousands","titleColor":"#646262"}
+          },
+          "y": {
+            "field": "Suicide rate per 100,000 population",
+            "type": "quantitative",
+            "scale": {"domain": [0.4, 53.5]},
+            "axis": {"tickCount": 10, "title": "Suicide rate per 100,000 population","titleColor":"#646262"}
+          }},
+    "layer": [
+      {
+        "params": [ {
+          "name": "org",
+          "select": {"type": "point", "fields": ["country"]},
+          "bind": {"input": "select", "options":[
+            null,
+            "Austria",
+              "Finland",
+              "Hungary",
+              "Russia",
+              "Lithuania",
+              "Belgium", "Bulgaria", "France", "Greece", "Iceland",
+       "Ireland", "Italy", "Luxembourg", "Malta", "Netherlands",
+       "Portugal", "Spain", "United Kingdom", "Norway",
+       "Sweden", "Ukraine", "Romania", "Armenia", "Azerbaijan",
+       "Belarus", "Czech Republic", "Georgia", "Germany", "Poland",
+       "Slovakia", "Denmark", "Albania", "Croatia", "Estonia",
+       "Latvia", "Slovenia", "Switzerland", "Serbia",
+       "Cyprus", "San Marino", "Montenegro", "Turkey",
+       "Bosnia and Herzegovina"],
+       "labels": [
+        "Show All",
+        "Austria",
+              "Finland",
+              "Hungary",
+              "Russia",
+              "Lithuania",
+              "Belgium", "Bulgaria", "France", "Greece", "Iceland",
+       "Ireland", "Italy", "Luxembourg", "Malta", "Netherlands",
+       "Portugal", "Spain", "United Kingdom", "Norway",
+       "Sweden", "Ukraine", "Romania", "Armenia", "Azerbaijan",
+       "Belarus", "Czech Republic", "Georgia", "Germany", "Poland",
+       "Slovakia", "Denmark", "Albania", "Croatia", "Estonia",
+       "Latvia", "Slovenia", "Switzerland", "Serbia",
+       "Cyprus", "San Marino", "Montenegro", "Turkey",
+       "Bosnia and Herzegovina"
+       ], "name": "Country Selection"}}],
+        "mark": "circle",
+        "encoding": {
+          "size":{"value":300},
+          
+          "color": {
+            "field": "country",
+            "type": "nominal",
+            "legend":null
+          },
+          "opacity": {
+            "condition": {"param": "org", "value": 1},
+            "value": 0.2
+            },
+          "tooltip": [
+            {"field": "country", "type": "nominal"},
+            {"field": "gdp_per_capita ($)", "type": "quantitative", "format": ".2f","title":"GDP per capita in thousands"},
+            {"field": "Suicide rate per 100,000 population", "type": "quantitative","title":"Suicide rate per 100,000 population"}
+      
+          ]
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "right",
+          "baseline": "bottom",
+          
+          "fontSize": 12,
+          "fontStyle": "normal",
+          "fontWeight":"bold"
+        },
+        "encoding": {
+          "text": {"field": "country", "type": "nominal"},
+          "color": {"value": "black"},
+
+          "opacity": {
+            "condition": {
+              "test": "datum['country'] == 'Austria' || datum['country'] == 'Finland' || datum['country'] == 'Russia' || datum['country'] == 'United Kingdom' || datum['country'] == 'Lithuania' || datum['country'] == 'Hungary'",
+              "value": 1
+            },
+            "value": 0
+          },
+          "tooltip": [
+            {"field": "country", "type": "nominal"},
+            {"field": "gdp_per_capita ($)", "type": "quantitative", "format": ".2f","title":"GDP per capita in thousands"},
+            {"field": "Suicide rate per 100,000 population", "type": "quantitative","title":"Suicide rate per 100,000 population"}
+    
+          ]
+        }
+      }
+    ]
+  }
