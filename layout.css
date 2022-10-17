@@ -307,3 +307,6 @@ body, html {
     color: rgb(18, 34, 212);
     font-display: 8px;
 }
+#end{
+    text-align: end;
+}
