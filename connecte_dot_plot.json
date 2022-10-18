@@ -74,7 +74,7 @@
             {
               "field": "suicides_no",
               "type": "quantitative",
-              "title": ["Suicide number"]
+              "title": ["Suicide number from total"]
             },
            
             {"field": "year", "type": "quantitative", "title": "Year"}

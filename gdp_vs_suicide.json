@@ -97,7 +97,7 @@
           "tooltip": [
             {"field": "country", "type": "nominal"},
             {"field": "gdp_per_capita ($)", "type": "quantitative", "format": ".2f","title":"GDP per capita in thousands"},
-            {"field": "Suicide rate per 100,000 population", "type": "quantitative","title":"Suicide rate per 100,000 population"}
+            {"field": "Suicide rate per 100,000 population", "type": "quantitative","title":"Suicide rate per 100,000 population","format":".2f"}
       
           ]
         }
