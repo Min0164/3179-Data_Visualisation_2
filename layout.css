@@ -319,6 +319,10 @@ body, html {
     color: rgb(18, 34, 212);
     font-display: 8px;
 }
-#end{
-    text-align: end;
+#small-font{
+    text-align:right;
+    color: #afa8a8;
+    font-size: 14px;
+    font-style: italic;
+    margin-right: 100px;
 }
