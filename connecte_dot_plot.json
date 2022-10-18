@@ -76,11 +76,7 @@
               "type": "quantitative",
               "title": ["Suicide number"]
             },
-            {
-              "field": "diff",
-              "type": "quantitative",
-              "title": ["Difference from the total"]
-            },
+           
             {"field": "year", "type": "quantitative", "title": "Year"}
           ]
         }
